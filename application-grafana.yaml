@@ -9,7 +9,9 @@ spec:
     repoURL: https://github.com/Teeworks1/grafana.git  # ✅ FIXED HERE
     targetRevision: HEAD
     path: .
-    helm: {}
+    helm: 
+      valueFiles:
+        - grafana-values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: trivy
+    namespace: monitoring
