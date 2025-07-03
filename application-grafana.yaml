@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Teeworks1/grafana.git  # ✅ FIXED HERE
+    repoURL: https://github.com/Teeworks1/grafana.git  #
     targetRevision: HEAD
     path: .
     helm: 
       valueFiles:
         - grafana-values.yaml
   destination:
-    server: https://kubernetes.default.svc
+    qaserver: https://kubernetes.default.svc
     namespace: monitoring
